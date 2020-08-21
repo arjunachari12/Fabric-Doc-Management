@@ -43,15 +43,15 @@ async function executeFunction(fucname, docnumber) {
        // Evaluate the specified transaction.
         //queryCar transaction - requires 1 argument, ex: ('queryCar', 'CAR4')
         //queryAllCars transaction - requires no arguments, ex: ('queryAllCars')
-        // result = await contract.evaluateTransaction('queryDocument', 'DOC1');
+        result = await contract.evaluateTransaction('queryDocument', 'DOC1');
         // const result = await contract.evaluateTransaction('queryAllCars');
         // const result = await contract.evaluateTransaction('getCarHistory', 'CAR0');
-        if (fucname == 'queryAllDocument') {
-             result = await contract.evaluateTransaction(fucname);
-        }
-        else {
-             result = await contract.evaluateTransaction(fucname, docnumber);
-        }
+        // if (fucname == 'queryAllDocument') {
+        //      result = await contract.evaluateTransaction(fucname);
+        // }
+        // else {
+        //      result = await contract.evaluateTransaction('queryDocument', docnumber);
+        // }
 
         console.log(`Transaction has been evaluated, result is: ${result.toString()}`);
 

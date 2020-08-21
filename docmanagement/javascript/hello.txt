@@ -1,1 +1,17 @@
-data inside the file
+Run on Node.js and the Browser
+
+js-ipfs works out of the box on Node.js, Electron and any modern browser. It is also customizable by design so that you can use it on your favorite runtime. Browser
+
+js-ipfs works out of the box on Node.js, Electron and any modern browser. It is also customizable by design so that you can use it on your favorite runtime.
+
+Implements the full IPFS Stack
+
+No feature was left behind. js-ipfs is not a light client, it is the full implementation of the IPFS protocol.
+
+Use PubSub to communicate in realtime with the other peers
+
+IPFS nodes can create network topologies based on topics of interest to broadcast events in realtime.
+
+Add and retrieve files from anywhere in the IPFS Network
+
+IPFS is designed to use the power of Content Addressing to find the nodes in the network that have the content you are looking for. In the same way, you can add data and other nodes will find it too.
