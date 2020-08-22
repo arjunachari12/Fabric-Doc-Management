@@ -4,13 +4,12 @@ const IPFS = require('ipfs')
 const all = require('it-all')
 var fs = require('fs');
 
-let filec;
+async function uploadfile () {
+    let filec;
 fs.readFile('hello.txt', 'utf8', function(err, data) {
     if (err) throw err;
     filec = data;
 });
-
-async function main () {
   const node = await IPFS.create()
   const version = await node.version()
 
@@ -18,7 +17,7 @@ async function main () {
 
   const file = await node.add({
     path: 'hello.txt',
-    content: Buffer.from(filec) 
+    content: Buffer.from(filec)
   })
 
   //get CID  and succesful upload
@@ -28,6 +27,22 @@ async function main () {
   const data = Buffer.concat(await all(node.cat(file.cid)))
 
   console.log('Added file contents:', data.toString())
+  return file.cid;
 }
 
-main()
+//main()
+
+var upoload = async function(fucname, docnumber) {
+    try {
+        // load the network configuration
+        return uploadfile();
+
+
+    } catch (error) {
+        console.error(`Failed to evaluate transaction: ${error}`);
+        process.exit(1);
+    }
+
+}
+exports.fileUploader = upoload;
+

@@ -1,17 +1,11 @@
-Run on Node.js and the Browser
+Stretching the Boundaries of Traditional Key Protection
+Unbound Key Control (UKC) ensures that your most sensitive keys never exist in the clear at any point in their lifecycle – not even when generated, while in use or while at rest. With Unbound’s Distributed Trust Platform, key material is never whole – not in memory, disk or network.
 
-js-ipfs works out of the box on Node.js, Electron and any modern browser. It is also customizable by design so that you can use it on your favorite runtime. Browser
+By eliminating this single point of compromise, UKC can stretch the secure boundary far beyond the traditional physical casing.
 
-js-ipfs works out of the box on Node.js, Electron and any modern browser. It is also customizable by design so that you can use it on your favorite runtime.
+Virtualize Key Control with our NextGen vHSM®
+Manage your keys, automate them, and operate them – from anywhere.
 
-Implements the full IPFS Stack
+Unbound’s NextGen vHSM® provides the same security as traditional HSM systems – with none of the operational headaches.
 
-No feature was left behind. js-ipfs is not a light client, it is the full implementation of the IPFS protocol.
-
-Use PubSub to communicate in realtime with the other peers
-
-IPFS nodes can create network topologies based on topics of interest to broadcast events in realtime.
-
-Add and retrieve files from anywhere in the IPFS Network
-
-IPFS is designed to use the power of Content Addressing to find the nodes in the network that have the content you are looking for. In the same way, you can add data and other nodes will find it too.
+Try it out for yourself in a 10-minute interactive demo.

@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 var query = require('./query1.js');
 var invoke = require('./invoke1.js');
-var fileUploader = require('./fileUploader.js');
+var fileUploader = require('./fileUploader1.js');
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
